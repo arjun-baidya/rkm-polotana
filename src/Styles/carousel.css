@@ -1,0 +1,19 @@
+.carousel-section {
+    height: 800px;
+    width: 100%;
+}
+
+.d-block {
+    height: 800px;
+    width: 100%;
+}
+
+.carousel-text {
+    text-align: left;
+    color: white;
+    padding-bottom: 300px;
+}
+
+.carousel-text p {
+    font-size: 18px;
+}
