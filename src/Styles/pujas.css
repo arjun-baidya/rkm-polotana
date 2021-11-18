@@ -1,0 +1,27 @@
+.pujas-btn-div {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.puja-btn {
+    background-color: aliceblue;
+    border: 0;
+}
+.puja-btn:hover{
+    background-color: bisque;
+    color:chocolate
+}
+
+.puja-pic-row {
+    padding-top: 30px;
+}
+
+.puja-pic-card {
+    margin-bottom: 20px;
+}
+
+.puja-pic {
+    height: 300px;
+    padding: 12px;
+    border-radius: 15px;
+}

@@ -1,0 +1,37 @@
+.short-about-row {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    height: 400px;
+    width: 100%;
+}
+
+.short-about-right-col-f-div {
+    text-align: center;
+}
+
+.about-image-right {
+    height: 80px;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.about-paragrapg p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 55px;
+    color: #DB4242;
+    font-weight: bold;
+}
+
+.about-para-two p {
+    text-align: justify;
+    padding-top: 20px;
+    color: #DB4242;
+    font-weight: bold;
+}
+
+.about-btn{
+    margin-top: 40px;
+}

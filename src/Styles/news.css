@@ -1,0 +1,24 @@
+.news-row {
+    margin-bottom: 20px;
+    /* background-image: url("../image/backg.png"); */
+}
+
+
+.news-title {
+    color: rgb(216, 69, 179);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.news-item-title {
+    text-align: left;
+}
+
+.news-item-title p {
+    font-size: 22px;
+    color: rgb(16, 41, 41);
+}
+
+.news-content p {
+    text-align: left;
+}

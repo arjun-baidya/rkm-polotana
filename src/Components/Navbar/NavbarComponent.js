@@ -6,16 +6,16 @@ import '../../Styles/navbar.css'
 function NavbarComponent() {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar className="navbar-color"  expand="lg" fixed='top'>
                 <Container>
-                <Navbar.Brand href="#home">RKM-POLOTANA</Navbar.Brand>
+                <Navbar.Brand className="nav-text" href="#home">RKM-POLOTANA</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                    <Nav.Link href="#features">Home</Nav.Link>
-                    <Nav.Link href="#pricing">Pujas</Nav.Link>
-                    <Nav.Link href="#pricing">Event</Nav.Link>
-                    <NavDropdown title="More" id="collasible-nav-dropdown">
+                    <Nav className="ms-auto">
+                    <Nav.Link className="nav-text" href="#features">Home</Nav.Link>
+                    <Nav.Link className="nav-text" href="#pricing">Pujas</Nav.Link>
+                    <Nav.Link className="nav-text" href="#pricing">Event</Nav.Link>
+                    <NavDropdown className="nav-text" title="More" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -24,10 +24,10 @@ function NavbarComponent() {
                     </NavDropdown>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="#deets">
+                    <Nav.Link className="nav-text" href="#deets">
                         +8802157
                     </Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
+                    <Nav.Link className="nav-text" eventKey={2} href="#memes">
                         Dank memes
                     </Nav.Link>
                     </Nav>
