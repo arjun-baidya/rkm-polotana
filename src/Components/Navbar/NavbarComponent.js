@@ -1,14 +1,16 @@
 import React from 'react'
 // import react bootstrap
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container, Image } from 'react-bootstrap';
 import '../../Styles/navbar.css'
 
 function NavbarComponent() {
+
     return (
         <div>
             <Navbar className="navbar-color"  expand="lg" fixed='top'>
                 <Container>
-                <Navbar.Brand className="nav-text" href="#home">RKM-POLOTANA</Navbar.Brand>
+                <Image src="./images/rkmlogo.jpeg" alt="" title="Ramakrishna Seba Ashram Polotana" className="rkmlogo" />
+                <Navbar.Brand className="nav-text-main" href="#home">RKM-POLOTANA</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
@@ -25,10 +27,13 @@ function NavbarComponent() {
                     </Nav>
                     <Nav>
                     <Nav.Link className="nav-text" href="#deets">
-                        +8802157
+                        +880173277132
                     </Nav.Link>
                     <Nav.Link className="nav-text" eventKey={2} href="#memes">
-                        Dank memes
+                        Contact
+                    </Nav.Link>
+                    <Nav.Link className="nav-text" eventKey={2} href="#memes">
+                        Donate
                     </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

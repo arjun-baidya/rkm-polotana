@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutShort from '../AboutShort/AboutShort'
+import Bani from '../Bani/Bani'
 import BannerCarousel from '../Carousel/BannerCarousel'
 import Donation from '../Donate/Donation'
 import MondirService from '../HowToHelp/MondirService'
@@ -10,6 +11,7 @@ import Pujas from '../Pujas/Pujas'
 function Home() {
     return (
         <div>
+            <Bani />
             <BannerCarousel />
             <News />
             <Inspiration />
