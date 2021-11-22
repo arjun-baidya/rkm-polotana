@@ -4,7 +4,7 @@ import '../../Styles/carousel.css'
 function BannerCarousel() {
     return (
         <div>
-            <Carousel fade className="carousel-section">
+            <Carousel controls={false} fade className="carousel-section">
                 <Carousel.Item>
                     <img
                     className="d-block w-100"

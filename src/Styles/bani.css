@@ -23,9 +23,12 @@
     display: inline-block;
 }
 
+
 #flip div:first-child {
     animation: show 10s linear infinite;
+    /* animation-delay: 5s; */
 }
+
 
 /* #flip div div {
     background: #42c58a;
