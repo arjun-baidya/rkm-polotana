@@ -3,10 +3,10 @@ import AboutShort from '../AboutShort/AboutShort'
 import Bani from '../Bani/Bani'
 import BannerCarousel from '../Carousel/BannerCarousel'
 import Donation from '../Donate/Donation'
-import MondirService from '../HowToHelp/MondirService'
 import Inspiration from '../Inspiration/Inspiration'
 import News from '../News/News'
 import Pujas from '../Pujas/Pujas'
+import Volunteers from '../Volunteers/Volunteers'
 
 function Home() {
     return (
@@ -16,9 +16,9 @@ function Home() {
             <News />
             <Inspiration />
             <AboutShort />
-            <MondirService />
             <Donation />
             <Pujas />
+            <Volunteers />
         </div>
     )
 }

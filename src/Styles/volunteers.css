@@ -1,0 +1,37 @@
+.volunteers-div {
+    padding-top: 50px;
+}
+
+.volunteers-div h1 {
+    color: rgb(202, 99, 99);
+}
+
+.volunteers-div p {
+    color: rgb(202, 99, 99);
+    text-align: left;
+    padding-top: 20px;
+}
+
+.volunteers-row {
+    padding-bottom: 50px;
+}
+
+.volunteers-image-div {
+    padding-left: 150px;
+}
+.maharaj-image {
+    height: 200px;
+}
+
+.maharaj-card:hover {
+    border: 2px solid rgb(196, 136, 136);
+    transition: 0.10s;
+    transform-style: flat;
+    zoom: 1;
+}
+
+.maharaj-name {
+    color: rgb(199, 98, 98);
+    font-size: 22px;
+    line-height: 0.5;
+}

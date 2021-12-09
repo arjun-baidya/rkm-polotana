@@ -86,50 +86,50 @@ function Pujas() {
                             <Row className="puja-pic-row">
                                 <Col sm={6} md={4}>
                                     <Card className="puja-pic-card">
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
+                                        <Card.Img className="puja-pic" variant='top' src="./images/puja1.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
+                                            <p>Durga Puja <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
                                             <FontAwesomeIcon icon="fa-brands fa-twitter" />
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                 <Col sm={6} md={4}>
                                     <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
+                                        <Card.Img className="puja-pic" variant='top' src="./images/puja2.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja Joggya</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                 <Col sm={6} md={4}>
                                     <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
+                                        <Card.Img className="puja-pic" variant='top' src="./images/puja3.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                 <Col sm={6} md={4}>
                                     <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
+                                        <Card.Img className="puja-pic" variant='top' src="./images/puja1.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                  <Col sm={6} md={4}>
                                     <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
+                                        <Card.Img className="puja-pic" variant='top' src="./images/puja3.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                  <Col sm={6} md={4}>
                                     <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
+                                        <Card.Img className="puja-pic" variant='top' src="./images/puja2.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -146,7 +146,7 @@ function Pujas() {
                                     <Card className="puja-pic-card">
                                         <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
+                                            <p>Durga Puja <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
                                             <FontAwesomeIcon icon="fa-brands fa-twitter" />
                                         </Card.Body>
                                     </Card>
@@ -155,7 +155,7 @@ function Pujas() {
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja Joggo</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -163,7 +163,7 @@ function Pujas() {
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -171,7 +171,7 @@ function Pujas() {
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
                                         <Card.Body>
-                                            <p>fadjfjadf</p>
+                                            <p>Puja</p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
