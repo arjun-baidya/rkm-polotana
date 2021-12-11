@@ -3,6 +3,7 @@ import AboutShort from '../AboutShort/AboutShort'
 import Bani from '../Bani/Bani'
 import BannerCarousel from '../Carousel/BannerCarousel'
 import Donation from '../Donate/Donation'
+import Event from '../Event/Event'
 import Inspiration from '../Inspiration/Inspiration'
 import News from '../News/News'
 import Pujas from '../Pujas/Pujas'
@@ -16,7 +17,8 @@ function Home() {
             <News />
             <Inspiration />
             <AboutShort />
-            <Donation />
+            <Donation /> 
+            <Event />
             <Pujas />
             <Volunteers />
         </div>

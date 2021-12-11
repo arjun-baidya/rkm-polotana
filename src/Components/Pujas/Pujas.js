@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Row, Button, Col, Container, Card } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 import '../../Styles/pujas.css'
 
@@ -84,16 +85,15 @@ function Pujas() {
                     allPuja &&(
                         <div>
                             <Row className="puja-pic-row">
-                                <Col sm={6} md={4}>
+                                <Col sm={6} md={4} className='puja-card-col'>
                                     <Card className="puja-pic-card">
                                         <Card.Img className="puja-pic" variant='top' src="./images/puja1.jpeg" fluid />
                                         <Card.Body>
-                                            <p>Durga Puja <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
-                                            <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                                            <p>Durga Puja <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                <Col sm={6} md={4}>
+                                <Col sm={6} md={4} className='puja-card-col'>
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/puja2.jpeg" fluid />
                                         <Card.Body>
@@ -101,7 +101,7 @@ function Pujas() {
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                <Col sm={6} md={4}>
+                                <Col sm={6} md={4} className='puja-card-col'>
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/puja3.jpeg" fluid />
                                         <Card.Body>
@@ -109,7 +109,7 @@ function Pujas() {
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                <Col sm={6} md={4}>
+                                <Col sm={6} md={4} className='puja-card-col'>
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/puja1.jpeg" fluid />
                                         <Card.Body>
@@ -117,7 +117,7 @@ function Pujas() {
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                 <Col sm={6} md={4}>
+                                 <Col sm={6} md={4} className='puja-card-col'>
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/puja3.jpeg" fluid />
                                         <Card.Body>
@@ -125,7 +125,7 @@ function Pujas() {
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                 <Col sm={6} md={4}>
+                                 <Col sm={6} md={4} className='puja-card-col'>
                                     <Card>
                                         <Card.Img className="puja-pic" variant='top' src="./images/puja2.jpeg" fluid />
                                         <Card.Body>

@@ -18,7 +18,7 @@ function Volunteers() {
                     </Col>
                     <Col sm={12} md={5}>
                         <div className='volunteers-image-div'>
-                            <Card style={{ width: '18rem' }} className='maharaj-card'>
+                            <Card className='maharaj-card'>
                             <Card.Img variant="top" src="./images/majaraj.jpeg" className='maharaj-image' fluid/>
                             <Card.Body>
                                 <p className='maharaj-name'>Br. Bijon Maharaj </p>

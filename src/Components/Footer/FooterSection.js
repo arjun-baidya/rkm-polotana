@@ -14,7 +14,7 @@ function FooterSection() {
 
 
     return (
-        <div>
+        <div className='footer-full-div'>
             <Row className="footer-sec">
                 <Col xs={12} sm={12} md={4} lg={4}>
                     <div className="footer-section">

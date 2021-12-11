@@ -1,9 +1,9 @@
 .footer-sec {
-    width: 100%;
-    /* height: 400px; */
+    width: 100% !important;
     padding-top: 40px;
     background-color: rgb(211, 147, 102);
     color: aliceblue;
+    --bs-gutter-x: 0 !important;
 }
 
 .about-link {
@@ -28,7 +28,7 @@
     font-size: 20px;
 }
 
-.footer-time-text{
+.footer-time-text {
     font-weight: 300;
     color: whitesmoke;
 }
