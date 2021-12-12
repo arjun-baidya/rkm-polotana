@@ -1,9 +1,10 @@
 import React,{useEffect,useState} from 'react'
-import { Row, Button, Col, Container, Card } from 'react-bootstrap'
+import { Row, Button, Col, Container, Card, Image } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 import axios from "axios";
 import '../../Styles/pujas.css'
+import pics from '../../image/maa.jpg'
 
 function Pujas() {
 
@@ -101,7 +102,7 @@ function Pujas() {
                                 { pujasData.map((puja,index)=>(
                                 <Col sm={6} md={4} className='puja-card-col' key={index}>
                                     <Card className="puja-pic-card">
-                                        <Card.Img src={puja.puja_pic} className="puja-pic" variant='top' fluid />
+                                        <Card.Img src={puja.image} className="puja-pic" variant='top' fluid />
                                         <Card.Body>
                                             <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
                                         </Card.Body>
