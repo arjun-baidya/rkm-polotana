@@ -1,8 +1,23 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import { Accordion, Container, Row } from 'react-bootstrap';
+import axios from "axios";
 import '../../Styles/news.css';
 
 function News() {
+
+    const [newsData, setNewsData] = useState([]);
+    console.log(newsData);
+    useEffect(() => {
+        axios.get("http://127.0.0.1:8000/api/news/")
+        .then(res => {
+         setNewsData(res.data);
+                      
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }, [])
+
     return (
         <div>
             <Container>
@@ -13,31 +28,21 @@ function News() {
                         </div>
                         <div className="news-content">
                             <Accordion defaultActiveKey="1" className='accordian-section'>
-                                <Accordion.Item eventKey="0" className='accordian-section'>
+                                {newsData.map((news,index) => (
+                                <Accordion.Item eventKey="0" className='accordian-section' key={index}>
                                 <Accordion.Header >
                                     <div className="news-item-title">
-                                        <p>Short report of Sadhu Bhandara and memorial meeting of the passing away of Rev. Sw. Ameyanandaji Maharaj</p>
+                                        <p> {news.title} </p>
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
                                     <p>
-                                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        {news.description}
                                     </p>
                                 </Accordion.Body>
-                            </Accordion.Item>
+                                </Accordion.Item>
+                                ))}
                                 <br />
-                            <Accordion.Item eventKey="1" className='accordian-section'>
-                                <Accordion.Header >
-                                    <div className="news-item-title">
-                                        <p>Short report of Sadhu Bhandara and memorial meeting of the passing away of Rev. Sw. Ameyanandaji Maharaj</p>
-                                    </div>
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    <p>
-                                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </Accordion.Body>
-                            </Accordion.Item>
                             </Accordion>
                         </div>
                     </div>
@@ -47,4 +52,4 @@ function News() {
     )
 }
 
-export default News
+export default News;

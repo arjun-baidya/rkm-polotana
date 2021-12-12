@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React,{useEffect,useState} from 'react'
 import { Row, Button, Col, Container, Card } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
-
+import axios from "axios";
 import '../../Styles/pujas.css'
 
 function Pujas() {
@@ -12,6 +12,19 @@ function Pujas() {
     const [ramakrishna, setRamakrishna] = useState()
     const [maa, setMaa] = useState()
     const [vivekananda, setVivekananda] = useState()
+
+    const [pujasData, setPujasData] = useState([]);
+    console.log('puja',pujasData);
+    useEffect(() => {
+        axios.get("http://127.0.0.1:8000/api/pujas/")
+        .then(res => {
+         setPujasData(res.data);
+                      
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }, [])
 
     const allPujaHandle =()=>{
         setAllPuja(true)
@@ -85,54 +98,16 @@ function Pujas() {
                     allPuja &&(
                         <div>
                             <Row className="puja-pic-row">
-                                <Col sm={6} md={4} className='puja-card-col'>
+                                { pujasData.map((puja,index)=>(
+                                <Col sm={6} md={4} className='puja-card-col' key={index}>
                                     <Card className="puja-pic-card">
-                                        <Card.Img className="puja-pic" variant='top' src="./images/puja1.jpeg" fluid />
+                                        <Card.Img src={puja.puja_pic} className="puja-pic" variant='top' fluid />
                                         <Card.Body>
-                                            <p>Durga Puja <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
+                                            <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                <Col sm={6} md={4} className='puja-card-col'>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/puja2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja Joggya</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4} className='puja-card-col'>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/puja3.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4} className='puja-card-col'>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/puja1.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                 <Col sm={6} md={4} className='puja-card-col'>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/puja3.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                 <Col sm={6} md={4} className='puja-card-col'>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/puja2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
+                                ))}
                             </Row>
                         </div>
                     )

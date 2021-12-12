@@ -6,7 +6,7 @@ import '../../Styles/navbar.css'
 function NavbarComponent() {
 
     return (
-        <div>
+        <div className='navbar-full-div'>
             <Navbar className="navbar-color"  expand="lg" fixed='top'>
                 <Container>
                 <Image src="./images/rkmlogo.jpeg" alt="" title="Ramakrishna Seba Ashram Polotana" className="rkmlogo" />
