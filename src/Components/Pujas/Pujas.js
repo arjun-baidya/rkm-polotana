@@ -102,7 +102,7 @@ function Pujas() {
                                 { pujasData.map((puja,index)=>(
                                 <Col sm={6} md={4} className='puja-card-col' key={index}>
                                     <Card className="puja-pic-card">
-                                        <Card.Img src={puja.image} className="puja-pic" variant='top' fluid />
+                                        <Card.Img src={`http://127.0.0.1:8000${puja.image}`} className="puja-pic" variant='top' fluid />
                                         <Card.Body>
                                             <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
                                         </Card.Body>

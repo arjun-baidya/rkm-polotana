@@ -8,18 +8,18 @@ function Volunteers() {
         <div>
             <Container>
                 <Row className='volunteers-row'>
-                    <Col sm={12} md={7}>
+                    <Col sm={12} md={8}>
                         <div className='volunteers-div'>
-                            <h1>Volunteers</h1>
+                            <h1>Monk</h1>
                             <p>
-                                We are a Hindu that belives in Lord Rama and Vishnu Deva the followers and We are a Hindu that belives in Lord Rama and Vishnu Deva.
+                                Br. Bijon Maharaj is the main monk in this mission and Maharaj is in charge of this mission.
                             </p>
                         </div>
                     </Col>
-                    <Col sm={12} md={5}>
+                    <Col sm={12} md={4}>
                         <div className='volunteers-image-div'>
                             <Card className='maharaj-card'>
-                            <Card.Img variant="top" src="./images/majaraj.jpeg" className='maharaj-image' fluid/>
+                            <Card.Img variant="top" src="./images/maharaj.png" className='maharaj-image' fluid/>
                             <Card.Body>
                                 <p className='maharaj-name'>Br. Bijon Maharaj </p>
                                 <p>temple Monk </p>

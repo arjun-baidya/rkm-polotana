@@ -20,7 +20,7 @@ function Donation() {
                             </Card.Title>
                             <Card.Body>
                                 <p className="card-text">
-                                    Temple is place where hindu worship consectetur adipisicing elit, sed do
+                                শান্তির খোজে কখনো নিজের দায়ত্ব নিজের কর্ম কে ত্যাগ করা হল মুর্খামি” -স্বামী বিবেকানন্দ
                                 </p>
                                 <div>
                                     <Button className="donation-btn">Donate</Button>
@@ -30,13 +30,14 @@ function Donation() {
                     </Col>
                     <Col xs={12} md={4}>
                         <Card className="donation-card">
-                            <Card.Img className="donation-img" variant="top" src="./images/foodHelp.jpg" fluid/>
+                            <Card.Img className="donation-img" variant="top" src="./images/food.jpg" fluid/>
                             <Card.Title>
                                 <p className="donation-title">Food Donation</p>
                             </Card.Title>
                             <Card.Body>
                                 <p className="card-text">
-                                    Temple is place where hindu worship consectetur adipisicing elit, sed do
+                                “জীবনে পাপ পুণ্য হিসাব না করে, নিষ্কাম কর্ম করার প্রতি একনিষ্ঠ হওয়া প্রয়োজন।”
+                                -স্বামী বিবেকানন্দ
                                 </p>
                                 <div>
                                     <Button className="donation-btn">Donate</Button>
@@ -52,7 +53,7 @@ function Donation() {
                             </Card.Title>
                             <Card.Body>
                                 <p className="card-text">
-                                    Temple is place where hindu worship consectetur adipisicing elit, sed do
+                                "ওঠো, জাগো থেমনা যতক্ষণ না নিজের লক্ষ্যে পৌছছ”-স্বামী বিবেকানন্দ
                                 </p>
                                 <div>
                                     <Button className="donation-btn">Donate</Button>

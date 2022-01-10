@@ -10,17 +10,15 @@
     color: rgb(202, 99, 99);
     text-align: left;
     padding-top: 20px;
+    font-size: 23px;
 }
 
 .volunteers-row {
     padding-bottom: 50px;
 }
 
-.volunteers-image-div {
-    padding-left: 150px;
-}
 .maharaj-image {
-    height: 200px;
+    height: 280px;
 }
 
 .maharaj-card:hover {

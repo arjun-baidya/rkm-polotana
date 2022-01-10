@@ -1,77 +1,29 @@
-#container {
-    color: #999;
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 80px;
-    padding-bottom: 20px;
+.bani-row{
+    padding-top: 90px;
     width: 100%;
-    bottom: 45%;
-    display: block;
 }
 
-#flip {
-    height: 50px;
-    overflow: hidden;
+.bani-row p{
+    text-align: center;
+    font-size: 27px;
 }
 
-#flip>div>div {
-    color: #ff8c00;
-    padding: 4px 12px;
-    height: 45px;
-    margin-bottom: 45px;
+.bani-text{
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #d47c95 0%,
+            #9786aa 29%,
+            #f70a59 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 50% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 7s linear infinite;
     display: inline-block;
-}
-
-
-#flip div:first-child {
-    animation: show 10s linear infinite;
-    /* animation-delay: 5s; */
-}
-
-
-/* #flip div div {
-    background: #42c58a;
-}
-
-#flip div:first-child div {
-    background: #4ec7f3;
-}
-
-#flip div:last-child div {
-    background: #DC143C;
-} */
-
-@keyframes show {
-    0% {
-        margin-top: -270px;
-    }
-
-    5% {
-        margin-top: -180px;
-    }
-
-    33% {
-        margin-top: -180px;
-    }
-
-    38% {
-        margin-top: -90px;
-    }
-
-    66% {
-        margin-top: -90px;
-    }
-
-    71% {
-        margin-top: 0px;
-    }
-
-    99.99% {
-        margin-top: 0px;
-    }
-
-    100% {
-        margin-top: -270px;
-    }
 }

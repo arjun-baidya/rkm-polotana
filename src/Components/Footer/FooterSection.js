@@ -19,7 +19,7 @@ function FooterSection() {
                 <Col xs={12} sm={12} md={4} lg={4}>
                     <div className="footer-section">
                         <h3>Contact US</h3>
-                        <p className="footer-rkm-name">Ramakrishna Ashram Polotana</p>
+                        <p className="footer-rkm-name">Ramakrishna Seba Ashram Polotana</p>
                         <p className="footer-contact-text">Bangladesh,Gopalganj,Kotalipara,Polotana</p>
                         <p className="footer-contact-text">+8801732777132</p>
                         <p className="footer-contact-text">rksapolotana@gmail.com</p>
@@ -41,7 +41,7 @@ function FooterSection() {
                 </Col>
                 <Col xs={12} sm={12} md={4} lg={4}>
                     <div>
-                        <p className="rkm-timing">Ramakrishna Ashram Polotana Timings</p>
+                        <p className="rkm-timing">Ramakrishna Seba Ashram Polotana Timings</p>
                         <p className="footer-time-text">Morning   : 6.00 to 12.00 am</p>
                         <p className="footer-time-text">Evening   :  4.30 to 10.00 pm</p>
                         <Clock />
@@ -50,7 +50,7 @@ function FooterSection() {
                 </Col>
                 <hr />
                 <div className="pb-4">
-                     &developedBy;{new Date().getFullYear()} | Baidya IT | All Rights Reserved | <span className='polotana-text'>Polotana Ramakrishna Seba-Ashram</span> 
+                     &developedBy;{new Date().getFullYear()} | <a href='https://web.facebook.com/ac.baidya/' target='blank'>Arjun Baidya</a> | All Rights Reserved | <span className='polotana-text'>Polotana Ramakrishna Seba-Ashram</span> 
                 </div>
             </Row>
         </div>
