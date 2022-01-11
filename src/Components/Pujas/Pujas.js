@@ -1,10 +1,9 @@
 import React,{useEffect,useState} from 'react'
-import { Row, Button, Col, Container, Card, Image } from 'react-bootstrap'
+import { Row, Button, Col, Container, Card } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 import axios from "axios";
 import '../../Styles/pujas.css'
-import pics from '../../image/maa.jpg'
 
 function Pujas() {
 
@@ -106,6 +105,14 @@ function Pujas() {
                                         <Card.Body>
                                             <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
                                         </Card.Body>
+                                        <Row className='puja-date-div'>
+                                            <Col>
+                                            <p className='puja-start-date'>Start Date :{puja.start_date}</p>
+                                            </Col>
+                                            <Col>
+                                            <p className='puja-end-date'>End Date :{puja.end_date}</p>
+                                            </Col>
+                                        </Row>
                                     </Card>
                                 </Col>
                                 ))}
@@ -118,39 +125,26 @@ function Pujas() {
                     durgaPuja &&(
                         <div>
                             <Row className="puja-pic-row">
-                                <Col sm={6} md={4}>
-                                    <Card className="puja-pic-card">
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Durga Puja <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
-                                            <FontAwesomeIcon icon="fa-brands fa-twitter" />
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja Joggo</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>Puja</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
+                                {
+                                    pujasData.filter(puja => puja.category === 'durga').map((puja,id )=>(
+                                        <Col sm={6} md={4} className='puja-card-col' key={id}>
+                                        <Card className="puja-pic-card">
+                                            <Card.Img src={`http://127.0.0.1:8000${puja.image}`} className="puja-pic" variant='top' fluid />
+                                            <Card.Body>
+                                                <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
+                                            </Card.Body>
+                                            <Row className='puja-date-div'>
+                                                <Col>
+                                                <p className='puja-start-date'>Start Date :{puja.start_date}</p>
+                                                </Col>
+                                                <Col>
+                                                <p className='puja-end-date'>End Date :{puja.end_date}</p>
+                                                </Col>
+                                            </Row>
+                                        </Card>
+                                    </Col>
+                                    ))
+                                }
                             </Row>
                         </div>
                     )
@@ -160,39 +154,26 @@ function Pujas() {
                     ramakrishna &&(
                         <div>
                             <Row className="puja-pic-row">
-                                <Col sm={6} md={4}>
-                                    <Card className="puja-pic-card">
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
-                                            <FontAwesomeIcon icon="fa-brands fa-twitter" />
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
+                                {
+                                    pujasData.filter(puja => puja.category === 'ramakrishna').map((puja,id )=>(
+                                        <Col sm={6} md={4} className='puja-card-col' key={id}>
+                                        <Card className="puja-pic-card">
+                                            <Card.Img src={`http://127.0.0.1:8000${puja.image}`} className="puja-pic" variant='top' fluid />
+                                            <Card.Body>
+                                                <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
+                                            </Card.Body>
+                                            <Row className='puja-date-div'>
+                                                <Col>
+                                                <p className='puja-start-date'>Start Date :{puja.start_date}</p>
+                                                </Col>
+                                                <Col>
+                                                <p className='puja-end-date'>End Date :{puja.end_date}</p>
+                                                </Col>
+                                            </Row>
+                                        </Card>
+                                    </Col>
+                                    ))
+                                }
                             </Row>
                         </div>
                     )
@@ -202,39 +183,26 @@ function Pujas() {
                     maa &&(
                         <div>
                             <Row className="puja-pic-row">
-                                <Col sm={6} md={4}>
-                                    <Card className="puja-pic-card">
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
-                                            <FontAwesomeIcon icon="fa-brands fa-twitter" />
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
+                                {
+                                    pujasData.filter(puja => puja.category === 'maa').map((puja,id )=>(
+                                        <Col sm={6} md={4} className='puja-card-col' key={id}>
+                                        <Card className="puja-pic-card">
+                                            <Card.Img src={`http://127.0.0.1:8000${puja.image}`} className="puja-pic" variant='top' fluid />
+                                            <Card.Body>
+                                                <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
+                                            </Card.Body>
+                                            <Row className='puja-date-div'>
+                                                <Col>
+                                                <p className='puja-start-date'>Start Date :{puja.start_date}</p>
+                                                </Col>
+                                                <Col>
+                                                <p className='puja-end-date'>End Date :{puja.end_date}</p>
+                                                </Col>
+                                            </Row>
+                                        </Card>
+                                    </Col>
+                                    ))
+                                }
                             </Row>
                         </div>
                     )
@@ -244,39 +212,26 @@ function Pujas() {
                     vivekananda &&(
                         <div>
                             <Row className="puja-pic-row">
-                                <Col sm={6} md={4}>
-                                    <Card className="puja-pic-card">
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf <FontAwesomeIcon icon="fa-solid fa-arrow-right" /></p>
-                                            <FontAwesomeIcon icon="fa-brands fa-twitter" />
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col sm={6} md={4}>
-                                    <Card>
-                                        <Card.Img className="puja-pic" variant='top' src="./images/oum2.jpeg" fluid />
-                                        <Card.Body>
-                                            <p>fadjfjadf</p>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
+                                {
+                                    pujasData.filter(puja => puja.category === 'swamiji').map((puja,id )=>(
+                                        <Col sm={6} md={4} className='puja-card-col' key={id}>
+                                        <Card className="puja-pic-card">
+                                            <Card.Img src={`http://127.0.0.1:8000${puja.image}`} className="puja-pic" variant='top' fluid />
+                                            <Card.Body>
+                                                <p>{puja.title} <FontAwesomeIcon className='rightArrow' icon={faChevronCircleRight} /></p>
+                                            </Card.Body>
+                                            <Row className='puja-date-div'>
+                                                <Col>
+                                                <p className='puja-start-date'>Start Date :{puja.start_date}</p>
+                                                </Col>
+                                                <Col>
+                                                <p className='puja-end-date'>End Date :{puja.end_date}</p>
+                                                </Col>
+                                            </Row>
+                                        </Card>
+                                    </Col>
+                                    ))
+                                }
                             </Row>
                         </div>
                     )

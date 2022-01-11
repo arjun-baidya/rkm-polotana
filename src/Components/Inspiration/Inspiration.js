@@ -17,7 +17,7 @@ function Inspiration() {
                             <Card.Img className="inspiration-img" variant="top" src="./images/thakur.jpg" fluid/>
                             <Card.Body>
                                 <div>
-                                    <Link to="/ramakrishna">
+                                    <Link to="/">
                                         <Button className="inspiration-btn">Sri Ramakrishna</Button>
                                     </Link>
                                 </div>
@@ -29,7 +29,7 @@ function Inspiration() {
                             <Card.Img className="inspiration-img" variant="top" src="./images/maa.jpg" fluid/>
                             <Card.Body>
                                 <div>
-                                    <Link to="/maa">
+                                    <Link to="/">
                                         <Button className="inspiration-btn">Holy Mother Sarada Devi</Button>
                                     </Link>
                                 </div>
@@ -41,7 +41,7 @@ function Inspiration() {
                             <Card.Img className="inspiration-img" variant="top" src="./images/swami-vivekananda.jpg" fluid/>
                             <Card.Body>
                                 <div>
-                                    <Link to="/swami-vivekananda">
+                                    <Link to="/">
                                         <Button className="inspiration-btn">Swami Vivekananda</Button>
                                     </Link>
                                 </div>

@@ -12,7 +12,7 @@ function Volunteers() {
                         <div className='volunteers-div'>
                             <h1>Monk</h1>
                             <p>
-                                Br. Bijon Maharaj is the main monk in this mission and Maharaj is in charge of this mission.
+                                Br. Bijon Maharaj is the main monk in this ashram and Maharaj is in charge of this ashram.
                             </p>
                         </div>
                     </Col>
@@ -22,7 +22,7 @@ function Volunteers() {
                             <Card.Img variant="top" src="./images/maharaj.png" className='maharaj-image' fluid/>
                             <Card.Body>
                                 <p className='maharaj-name'>Br. Bijon Maharaj </p>
-                                <p>temple Monk </p>
+                                <p>Temple Monk </p>
                             </Card.Body>
                             </Card>
                         </div>

@@ -32,6 +32,33 @@ function BannerCarousel() {
                     fluid
                     />
                 </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src="./images/b7.jpeg"
+                    alt="Third slide"
+                    title="Ramakrishna Seba Ashram Polotana"
+                    fluid
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src="./images/b8.jpeg"
+                    alt="Third slide"
+                    title="Ramakrishna Seba Ashram Polotana"
+                    fluid
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src="./images/b9.jpeg"
+                    alt="Third slide"
+                    title="Ramakrishna Seba Ashram Polotana"
+                    fluid
+                    />
+                </Carousel.Item>
                 </Carousel>
         </div>
     )

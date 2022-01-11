@@ -19,15 +19,15 @@ function AboutShort() {
                         <p>
                             We are a Hindu that 
                             <br />
-                            <span>believe in Ram</span>
+                            <span>believe in God.</span>
                         </p>
                     </div>
                     <div className="about-para-two" >
                         <p>
-                            We are a Hindu that belives in Lord Rama and Vishnu Deva the followers and We are a Hindu that belives in Lord Rama and Vishnu Deva.
+                            "As many faiths, So many Paths." -Sri Ramakrishna
                         </p>
                     </div>
-                    <Link to='/details' >
+                    <Link to='/' >
                         <Button className="about-btn"  variant="outline-success">About Ourself</Button>
                     </Link>
                 </Col>

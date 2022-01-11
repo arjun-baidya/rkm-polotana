@@ -1,6 +1,6 @@
 import React from 'react'
 // import react bootstrap
-import { Navbar, Nav, NavDropdown, Container, Image } from 'react-bootstrap';
+import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 import '../../Styles/navbar.css'
 
 function NavbarComponent() {
@@ -10,7 +10,7 @@ function NavbarComponent() {
             <Navbar className="navbar-color"  expand="lg" fixed='top'>
                 <Container>
                 <Image src="./images/rkmlogo.jpeg" alt="" title="Ramakrishna Seba Ashram Polotana" className="rkmlogo" />
-                <Navbar.Brand className="nav-text-main" href="/">RKM-POLOTANA</Navbar.Brand>
+                <Navbar.Brand className="nav-text-main" href="/">RKSA-POLOTANA</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">

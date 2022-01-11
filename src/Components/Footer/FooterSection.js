@@ -31,7 +31,7 @@ function FooterSection() {
                         <Link to='/' className='about-link'>
                             <p>FaceBook</p>
                         </Link>
-                        <Link to='/' className='about-link'>
+                        <Link to='/' target='blank' className='about-link'>
                             <p>Youtube</p>
                         </Link>
                         <Link to='/' className='about-link'>

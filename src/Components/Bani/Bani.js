@@ -33,7 +33,7 @@ function Bani() {
         // </div>
         <Row className='bani-row'>
             <Col>
-                <p className='bani-text'>"শক্তিই জীবন, দুর্বলতাই মৃত্যু, বিস্তার জীবন, সংকোচন মৃত্যু, প্রেম জীবন, ঘৃণা মৃত্যু – Swami Vivekananda",</p>
+                <p className='bani-text'>"শক্তিই জীবন, দুর্বলতাই মৃত্যু, বিস্তার জীবন, সংকোচন মৃত্যু, প্রেম জীবন, ঘৃণা মৃত্যু "– Swami Vivekananda</p>
             </Col>
         </Row>
     )

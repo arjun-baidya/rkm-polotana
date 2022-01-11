@@ -27,7 +27,13 @@ function Event() {
                         <Card.Body>
                         <Card.Title className='event-title-name'>{event.title}</Card.Title>
                         <Card.Text className='event-text'>
-                            {event.description}
+                            <div>
+                                <p className='event-date'>Date :{event.date}</p>
+                                <p className='event-time'>Time :{event.time}</p>
+                            </div>
+                            <div className='event-des'>
+                                <p>{event.description}</p>
+                            </div>
                         </Card.Text>
                         <Button className='event-details-btn'>Details</Button>
                         </Card.Body>
